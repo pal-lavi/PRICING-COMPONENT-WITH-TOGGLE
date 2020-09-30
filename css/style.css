@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#overlay{
+  background: url(../image/bg-intro-desktop.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  left: 0;
+
+  
+  
+}
+.container{
+  background:url(../image/bg-bottom.png) left bottom ,url(../image/ezgif.com-gif-maker.png) right top;
+ background-repeat: no-repeat;
+  height: 700px;
+  background-color: rgb(181, 181, 228);
+  
+  
+}
+#div-toggle h2{
+  margin-top: 50px;
+
+}
+
+  
+ 
+#div-Annually {
+  display: inline-block;
+  text-align: center;
+  
+  width: 100px;
+}
+#div-switch {
+  
+  display: inline-block;
+  width: 60px;
+  vertical-align: middle;
+  text-align: center;
+}
+#div-Monthly {
+  display: inline-block;
+  text-align: center;
+  
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color:purple;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px purple;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.list-1{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 15px;
+  
+}
+.list-2{
+  
+  border-bottom: 1px solid grey;
+}
+
+.list-3{
+  border-bottom: 1px solid grey;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:lavender;
+  color: white;
+  border-radius: 3px;
+  height: 40%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.block:hover {
+  background-color:rgb(171, 110, 228);
+  color: black;
+}
+
+.card{
+  margin-top: 50px;
+}
+
+
+  
+.card:hover{
+  -webkit-box-shadow: -9px -5px 28px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -9px -5px 28px 1px rgba(0,0,0,0.75);
+  box-shadow: -9px -5px 28px 1px rgba(0,0,0,0.75);
+  transform: translateY(-6px);
+  background-color: rgb(215, 182, 238);
+}
